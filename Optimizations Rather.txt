@@ -1,0 +1,6 @@
+Optimizations we can apply to this exercise code:
+1-Parallel ingestion may be applied to the ingestion script, since the data we are using and the hypertable have the same time dimension, would speed up the process 
+and leverage the hardware in the best way possible.
+2-Depending the operations, we can enable the chukwise aggregation/vectorized aggregation speeding up the query results such as sums.
+3-Ensure the data per node is enable so a single node have chunks of the same hypertable optimizing the query time.
+ 
